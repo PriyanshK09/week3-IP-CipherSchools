@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elements</title> 
+    <!-- these are used to style a particular part of an element -->
+    <!-- first-letter and first-line pseudo elements work for block line elements only -->
+    <style>
+        p::first-letter{
+            font-size: 20px;
+        }
+        /* p::first-line{
+            font-size: 20px;
+        } */
+        p::selection{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A perferendis fugit quaerat eaque qui velit vel adipisci.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A perferendis fugit quaerat eaque qui velit vel adipisci.</p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | nth child & nth of type pseudo class</title>
+    <style>
+        p:nth-child(2n){
+            color: red;
+        }
+        p:nth-of-type(2n+1){
+            color: blue;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        ul li:nth-child(2n){
+            color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+    <header>
+        <h3>headingyo</h3>
+        <p>shit</p>
+        <p>what</p>
+        <p>the</p>
+    </header>
+    <p>direct child of body</p>
+    <p>me too direct child of body</p>
+    <div class="container">
+        <p>para of container</p>
+        <p>para of container</p>
+        <p>para of container</p>
+        <h3>piece of shit inside container</h3>
+    </div>
+</body>
+</html>

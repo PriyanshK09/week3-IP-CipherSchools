@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em</title>
+    <style>
+        h1{
+            font-size: 2em /*1em = 16px and this might vary because this calculation is done based on font-size of the parent element*/;
+        }
+        .box{
+            font-size: 20px;
+        }
+        .box p{
+            font-size: 2em;
+            border: 2em solid black;/*now here the value of 2em will be 80px because apart from font-size whereever you use this em it takes the font-size of that element itself as basevalue and calculates the value according to it so here the font-size of the element is 40px so border is 2em so 2*40 = 80 that's how it works*/
+        }
+    </style>
+</head>
+<body>
+    <h1>this is main heading</h1>
+    <div class="box">
+        <h1>this is inside a shithole</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt dolores iste minima ipsa illum voluptatibus corporis laboriosam dicta omnis culpa libero placeat nemo ea, laudantium voluptates velit voluptatem fuga obcaecati. Optio at molestiae saepe? Minima necessitatibus a animi, nam atque magni, ex cumque impedit, veritatis repellat tempora! Repellendus deleniti ut ea illo! Tenetur, quam?</p>
+    </div>
+</body>
+</html>

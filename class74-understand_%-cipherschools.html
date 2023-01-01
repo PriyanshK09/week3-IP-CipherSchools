@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>% in CSS</title>
+    <style>
+        div{
+            border: 2px solid red;
+            font-size: 10px;
+            width: 50%;
+        }
+        p{
+            border: 1px solid green;
+            width: 50%;
+            background: lightblue;
+            font-size: 200%;/*percentages are calculated wrt parent here parent fsize is 10px so 200% of it would be 20px*/
+            margin: 10px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Hello there</p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo elements</title>
+    <style>
+        .cool::before{
+            content: "hello ";
+            display: block;
+            color: green;
+            border: 1px dotted black;
+            margin-top: 5px;
+            padding: 5px;
+        }
+        .cool::after{
+            content: "hello ";
+            display: block;
+            color: green;
+            border: 1px dotted black;
+            margin-top: 5px;
+            padding: 5px;
+        }
+        .main-heading::before{
+            content: "hello ";
+            color: red;
+        }
+        /* you cannot use before and after pseudo elements for img, br, input, etc. */
+    </style>
+</head>
+<body>
+    <p class="cool">this is para</p>
+    <h1 class="main-heading">this is heading</h1>
+</body>
+</html>

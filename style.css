@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+.favMusicians{
+    border: 10px solid #444;
+    border-radius: 5px;
+}
+
+.AlanWalker{
+    width: 25%;
+    
+    background-color: lightgray;
+    float: left;
+    border-radius: 5px;
+    padding: 5px;
+}
+.JamesHorner{
+    width: 25%;
+    
+    background-color: #cdcdcd;
+    color: black;
+    float: right;
+    border-radius: 5px;
+    padding: 5px;
+}
+.JamesHorner1{
+    width: 25%;
+    
+    background-color: lightcoral;
+    color: black;
+    float: right;
+    border-radius: 5px;
+    padding: 5px;
+}
+.JamesHorner2{
+    width: 25%;
+    
+    background-color: lightgoldenrodyellow;
+    color: black;
+    float: right;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.favMusicians::after{
+    content: "";
+    display: block;
+    clear: both;
+}

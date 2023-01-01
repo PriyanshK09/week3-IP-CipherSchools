@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | Last child & Last of type pseudo class</title>
+    <style>
+        p:last-child{
+            color: blue;
+        }
+        p:last-of-type{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>headingyo</h3>
+        <p>shit</p>
+        <p>what</p>
+        <p>the</p>
+    </header>
+    <p>direct child of body</p>
+    <p>me too direct child of body</p>
+    <div class="container">
+        <p>para of container</p>
+        <p>para of container</p>
+        <p>para of container</p>
+        <h3>piece of shit inside container</h3>
+    </div>
+</body>
+</html>
